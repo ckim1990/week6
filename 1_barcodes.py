@@ -17,3 +17,8 @@ def calculate_check_digit(upc_code):
 
 def verify_upc_code(upc_code):
   pass
+
+
+assert "3" == calculate_check_digit("978168050122")
+assert verify_upc_code("9781680501223")
+assert verify_upc_code("1781680501223") == False
